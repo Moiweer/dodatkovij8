@@ -44,7 +44,12 @@ img {
 }
 .container {
     padding-left: 15px;
-    padding-right: 15px;
+    padding-right: 15px;}
+    
+    .section {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
     
     @media screen and (min-width: 480px) {
         .container{
@@ -58,14 +63,8 @@ img {
         width: 768px;
         }
     }
-
     @media screen and (min-width: 1200px) {
-        .container{
+        .container {
         width: 1200px;  
         }
-}
-
-.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
+    }
