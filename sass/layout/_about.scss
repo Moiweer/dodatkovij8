@@ -1,212 +1,325 @@
 .about {
-    padding-top: 0;
+  padding-top: 0;
 }
 
 .about-title,
 .team-title,
 .our-clients-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.2;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--main-text-color);
-    margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+  margin-bottom: 50px;
 }
 
 .about-list {
-    display: flex;
-    justify-content: space-between;
-    cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
 }
 
 .about-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .about-list-photo:not(:last-child) {
-    margin-right: 30px;
+  margin-right: 30px;
 }
 
 .about-list-photo {
-    position: relative;
+  position: relative;
 }
 
 .about-overlay {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 70px;
-    bottom: 0;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.14;
-    text-align: center;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--white-text-color);
-    background: rgba(47, 48, 58, 0.8);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  bottom: 0;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-text-color);
+  background: rgba(47, 48, 58, 0.8);
 }
 
-
-
 // .benefits {
-//     background-image: linear-gradient(to bottom,
-//             #111518 63%,
-//             #e5e5e5 37%);
-
+//   background-image: linear-gradient(to bottom, var (--third-color) 63%, #e5e5e5 37%);
 // }
 
 // .benefits__title {
-//     font-family: 'Montserrat';
-//     font-style: normal;
-//     font-weight: 800;
-//     font-size: 20px;
-//     line-height: 136%;
-//     letter-spacing: 0.03em;
-//     color: #FFFFFF;
-//     margin-bottom: 30px;
+//   font-weight: 800;
+//   font-size: 20px;
+//   line-height: 136%;
+//   letter-spacing: 0.03em;
+//   color: var(--primary-color);
+
+//   margin-bottom: 30px;
 // }
-
-// .benefits__container {
-//     display: flex;
-//     background-color: white;
-//     max-width: 440px;
-//     padding: 20px 24px 20px 20px;
-//     margin: auto;
-//     box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
-//     z-index: 3;
-
+// .benefits__box {
+//   background-color: var(--primary-color);
+//   max-width: 440px;
+//   padding: 20px 24px 20px 20px;
+//   margin: auto;
+//   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+//   z-index: 3;
 // }
-
+// .benefits__item {
+//   margin-bottom: 40px;
+// }
 // .benefits__list {
-//     counter-reset: benefits__list;
+//   counter-reset: benefits__list;
 // }
-
 // .benefits__item::before {
-//     content: counter(benefits__list);
-//     counter-increment: benefits__list;
-//     color: var(--accent);
-//     font-family: 'Montserrat';
-//     font-style: normal;
-//     font-weight: 700;
-//     font-size: 14px;
-//     line-height: 23px;
+//   content: '- 0' counter(benefits__list);
+//   counter-increment: benefits__list;
+//   color: var(--accent);
+//   font-weight: 700;
+//   font-size: 14px;
+//   line-height: 23px;
 // }
-
+// .benefits__item::before::before {
+//   display: block;
+//   width: 22px;
+//   height: 1;
+//   color: var(--accent);
+//   content: '';
+//   flex-shrink: 0;
+// }
 // .benefits__text {
-//     font-family: 'Montserrat';
-//     font-style: normal;
-//     font-weight: 700;
-//     font-size: 14px;
-//     line-height: 1.43;
-//     letter-spacing: 0.08em;
-//     color: var(--third-color);
+//   font-weight: 700;
+//   font-size: 14px;
+//   line-height: 1.43;
+//   letter-spacing: 0.08em;
+//   color: var(--third-color);
 // }
 
-// // FOR TABLET -----------------------------
+// // FOR TABLET ----------------------------
 
 // @media screen and (min-width: 768px) {
-//     .benefits__title {
-//         text-align: center;
-//     }
+//   .benefits {
+//     background-image: linear-gradient(to top, #e5e5e5 60%, var(--third-color) 40%);
+//   }
+//   .benefits__title {
+//     text-align: center;
+//     margin-bottom: 30px;
+//   }
+//   .benefits__title br {
+//     display: none;
+//   }
+//   .benefits__box {
+//     min-width: 688px;
+//     padding: 40px 112px 40px 72px;
+//   }
+//   .benefits__list {
+//     display: flex;
+//     flex-wrap: wrap;
+//     margin-top: -44px;
+//     margin-left: -32px;
 
-//     br {
-//         display: none;
-//     }
+//     padding: 0;
+//   }
+//   .benefits__item {
+//     display: block;
+//     margin-left: 32px;
+//     margin-top: 44px;
+//     max-width: calc(100% - 64px) / 2;
+//     margin-bottom: 0;
+//   }
 
-//     .benefits__container {
-
-//         min-width: 688px;
-//         padding: 40px 112px 40px 92px;
-//     }
-
-//     .benefits__list {
-//         display: flex;
-//         flex-wrap: wrap;
-//         justify-content: center;
-//         align-items: center;
-
-//         margin-top: - 40px;
-//         //    margin-left: -70px;
-
-//         padding: 0;
-//     }
-
-//     .benefits__item {
-//         display: block;
-//         margin-left: 70px;
-//         margin-top: 40px;
-//         // margin-bottom: 44px;
-//         max-width: calc(100% - 64px) / 2;
-//     }
-
-//     .benefits__list:nth-child(n + 2) {
-//         margin-bottom: 0;
-//     }
-
-//     .benefits__list:nth-child(odd) {
-//         min-width: 236px;
-//     }
-
-//     .benefits__list:nth-child(even) {
-//         min-width: 216px;
-//     }
-
-//     p.benefits__text {
-//         flex-direction: column;
-//     }
-
+//   .benefits__list:nth-child(even) {
+//     width: 216px;
+//   }
+//   .benefits__text {
+//     max-width: 236px;
+//   }
+//   .benefits__list:nth-child(1) {
+//     min-width: 236px;
+//   }
 // }
 
 // // FOR DESKTOP-----------------------------
 
+// @media screen and (min-width: 1680px) {
+//   .benefits {
+//     min-width: 1680px;
+//     background-image: linear-gradient(to bottom, var (--third-color) 50%, #e5e5e5 50%);
+//   }
+
+//   .benefits__box {
+//     min-width: 1648px;
+//     padding: 60px 32px 60px 140px;
+//   }
+//   .benefits__title {
+//     visibility: hidden;
+//   }
+
+//   .benefits__list {
+//     margin-left: -204px;
+//     margin-top: -60px;
+//   }
+
+//   .benefits__text {
+//     min-width: 356px;
+//     font-size: 20px;
+//     line-height: 1.4;
+//   }
+//   .benefits__item::before {
+//     font-size: 20px;
+//     line-height: 33px;
+//   }
+//   .benefits__item {
+//     margin-left: 204px;
+//     margin-top: 40px;
+//     flex-basis: calc(100% - 612px) / 3;
+//   }
+// }
+
+// .problems {
+//   background-image: linear-gradient(
+//     to bottom,
+//     var(--third-color) 63%,
+//     #e5e5e5 37%
+//   );
+// }
+
+// .problems__title {
+//   font-weight: 800;
+//   font-size: 24px;
+//   line-height: 130%;
+//   letter-spacing: 0.03em;
+//   color: var(--primary-color);
+//   margin-bottom: 30px;
+// }
+// .problems-help {
+//   color: var(--accent);
+// }
+
+// .problems__box {
+//   background-color: var(--primary-color);
+//   max-width: 440px;
+//   padding: 32px 80px;
+//   margin: auto;
+//   margin-bottom: o;
+//   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+//   z-index: 3;
+// }
+
+// .problems__item {
+//   margin-bottom: 40px;
+// }
+
+// .problems__list {
+//   counter-reset: benefits__list;
+// }
+
+// .problems__item::before {
+//   content: "- 0" counter(benefits__list);
+//   counter-increment: benefits__list;
+//   color: var(--accent);
+//   font-weight: 700;
+//   font-size: 14px;
+//   line-height: 17px;
+// }
+
+// .problems__text {
+//   font-weight: 700;
+//   font-size: 14px;
+//   line-height: 1.71;
+//   letter-spacing: 0.08em;
+//   color: var(--third-color);
+// }
+
+// // FOR TABLET ----------------------------
+
+// @media screen and (min-width: 768px) {
+//   .problems {
+//     background-image: linear-gradient(
+//       to bottom,
+//       var(--third-color) 75%,
+//       #e5e5e5 25%
+//     );
+//   }
+//   .problems__title {
+//     max-width: 425px;
+//     margin-bottom: 25px;
+//   }
+
+//   .problems__box {
+//     min-width: 688px;
+//     padding: 40px 112px 40px 72px;
+//   }
+
+//   .problems__list {
+//     display: flex;
+//     flex-wrap: wrap;
+//     margin-top: -24px;
+//     margin-left: -20px;
+//     padding: 0;
+//   }
+
+//   .problems__item {
+//     display: block;
+//     margin-left: 20px;
+//     margin-top: 24px;
+//     max-width: calc(100% - 20px) / 2;
+//     margin-bottom: 0;
+//   }
+
+//   .problems__text {
+//     max-width: 224px;
+//   }
+
+//   .problems__list:nth-child(1) {
+//     min-width: 236px;
+//   }
+// }
+
+// // FOR DESKTOP-----------------------------
 
 // @media screen and (min-width: 1680px) {
-//     .benefits {
-//         min-width: 1680px;
-//     }
+//   .problems {
+//     min-width: 1680px;
+//   }
+//   .problems__title {
+//     margin-bottom: 80px;
+//     max-width: 866px;
+//     font-size: 46px;
+//   }
 
-//     .benefits__container {
-//         min-width: 1648px;
-//         padding: 60px 32px 60px 140px;
-//     }
+//   .problems__box {
+//     min-width: 1648px;
+//     padding: 60px 32px 60px 140px;
+//   }
 
-//     .benefits__title {
-//         visibility: hidden;
-//     }
+//   .problems__list {
+//     margin-left: -204px;
+//     margin-top: -60px;
+//   }
 
+//   .problems__text {
+//     min-width: 356px;
+//     font-size: 20px;
+//     line-height: 1.4;
+//   }
 
-//     .benefits__list {
-//         margin-left: -140px;
-//         margin-top: -60px;
-//     }
+//   .problems__item::before {
+//     font-size: 20px;
+//     line-height: 33px;
+//   }
 
-//     .benefits__text {
-//         font-size: 20px;
-//         line-height: 1.4;
-//     }
-
-//     .benefits__item::before {
-//         font-size: 20px;
-//         line-height: 33px;
-//     }
-
-//     .benefits__item {
-//         flex-wrap: wrap;
-//         flex-basis: calc(100% - 612px) / 3;
-//     }
-
-//     .benefits__item {
-//         display: block;
-//         margin-left: 70px;
-//         margin-top: 40px;
-//         // margin-bottom: 44px;
-//         max-width: calc(100% - 96px) / 3;
-//     }
+//   .problems__item {
+//     margin-left: 204px;
+//     margin-top: 40px;
+//     flex-basis: calc((100%- (85px+223px)) / 3);
+//   }
 // }
